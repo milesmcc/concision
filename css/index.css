@@ -1,0 +1,15 @@
+.logo {
+  font-size: 2em;
+}
+
+.top {
+  min-height: 5em;
+}
+
+.container {
+  max-width: 60%;
+}
+
+.stats {
+  display: none;
+}

@@ -1,10 +1,99 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Concision.co</title>
+  <meta charset='UTF-8'>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name='keywords' content='wordcount, sentencecount, concision, text analyzer'>
+  <meta name='description' content='Quickly find the word count, grade level, and sentence count of any piece of text.'>
+  <meta name='language' content='EN'>
+  <meta name='robots' content='index,follow'>
+  <meta name='author' content='Miles McCain'>
+  <meta name='designer' content='Miles McCain'>
+  <meta name='owner' content='the common good'>
+  <meta name='url' content='http://concision.co'>
+  <meta name='identifier-URL' content='http://concision.co'>
+  <meta name='pagename' content='Concision.co — simple wordcount and text analyzer'>
+  <meta name='HandheldFriendly' content='True'>
+
+  <link rel='icon' type='image/ico' href='assets/icon.png'>
+
+  <script src="js/words.js"></script>
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+  <link rel='shortcut icon' type='image/ico' href='/assets/icon.png'>
+
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+
+  <link rel="stylesheet" href="css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <title>Concision.co — simple wordcount and text analyzer</title>
 </head>
 <body>
-<h1>Concision.co</h1>
-<h3>Write beautifully!</h3>
+  <div class="container">
+    <center>
+      <h1>
+        <a href="http://concision.co"><span class="glyphicon glyphicon-scissors logo" aria-hidden="true"></a></span></h1>
+      </h1>
+    </center>
+    <div class="top">
+      <div class="welcome">
+        <center>
+          <h2>Concision.co<br><small>Word counts, sentence counts, character counts, and grade level.</small></h2>
+        </center>
+      </div>
+      <div class="stats">
+        <div class="row">
+          <div class="col-md-3">
+            <div class="statistic">
+              <center>
+                <h2 class="words">Error</h2>
+                <h4>Words</h4>
+              </center>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="statistic">
+              <center>
+                <h2 class="characters">Error</h2>
+                <h4>Characters</h4>
+              </center>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="statistic">
+              <center>
+                <h2 class="sentences">Error</h2>
+                <h4>Sentences</h4>
+              </center>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="statistic">
+              <center>
+                <h2 class="level">Error</h2>
+                <h4>Grade Level</h4>
+              </center>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br><br>
+    <div class="inputarea">
+      <textarea oninput="update()" class="form-control" id="input" rows="13" placeholder="Write or copy &amp; paste your text here..."></textarea>
+    </div>
+    <br><br>
+    <footer>
+      <small>
+        <center><a href="https://github.com/milesmcc/concision">open source</a> • <a href="info.html">more info</a></center>
+      </small>
+    </footer>
+  </div>
 </body>
 </html>
